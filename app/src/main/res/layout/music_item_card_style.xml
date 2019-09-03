@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:elevation="30dp"
+
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_music_list_item"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_music_list_item_header"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></LinearLayout>
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ll_music_list_detail"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/tv_music_item_songname"
+            android:layout_weight="1"
+            android:text="十年"
+            android:textStyle="normal"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:text="陈奕迅\n黑白灰"
+            android:id="@+id/tv_music_item_detail"
+            android:layout_weight="1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <TextView
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/tv_music_item_progress"
+            android:text="下载进度：0%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:id="@+id/btn_download_mp3"
+            android:text="MP3"
+            android:textSize="10dp"
+            android:textColor="@color/color_soft_green"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="36dp"></Button>
+        <Button
+            android:id="@+id/btn_download_flac"
+            android:text="FLAC"
+            android:textSize="10dp"
+            android:textColor="@color/colorButtonGold"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="36dp"></Button>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_download_mv"
+            android:text="MV"
+            android:textSize="10dp"
+            android:textColor="@color/colorRed"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="36dp"></Button>
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

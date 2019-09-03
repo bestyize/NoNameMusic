@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/color_deep_blue"
+            android:id="@+id/ll_notice_title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_notice_title"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:text="公告"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_notice_content"
+            android:background="@color/colorWhite"
+            android:layout_below="@+id/ll_notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <TextView
+                android:id="@+id/tv_notice_content"
+                android:textSize="15dp"
+
+                android:text="无名音乐同大家见面了\n这次归来更加强大！"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_notice_control"
+            android:layout_below="@+id/ll_notice_content"
+            android:background="@color/color_deep_blue"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <TextView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/tv_notice_cancel"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:text="取消"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></TextView>
+            <TextView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/tv_notice_ok"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:text="确定"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

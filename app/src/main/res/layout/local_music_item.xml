@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/ll_local_music_list_item"
+    style="@style/MusicListStyle">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:id="@+id/ll_music_list_detail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_local_songname"
+            android:layout_weight="2"
+            android:text="十年"
+            android:textSize="16dp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"></TextView>
+        <TextView
+            android:text="陈奕迅|黑白灰"
+            android:textSize="13dp"
+            android:id="@+id/tv_local_detail"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_loacl_music_quality"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:text="无损音质"
+            android:textSize="12dp"
+            android:textColor="@color/colorButtonGold"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/btn_local_music_share"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:text="分享"
+            android:textColor="@color/colorRed"></Button>
+    </LinearLayout>
+
+</LinearLayout>
